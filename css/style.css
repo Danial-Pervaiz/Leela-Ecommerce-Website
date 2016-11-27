@@ -8,74 +8,2193 @@
 
 */
 /* Default styles */
+html,
 body {
-  font-family: 'Lato', sans-serif;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+select:focus {
+  outline: none !important;
+}
+select {
+  padding: 2px 10px;
+  border: 1px solid #979997;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0px;
+  margin: 0px;
+}
+.btn-default {
+  font-weight: 500;
+  font-size: 11px;
+  text-align: center;
+  margin-left: 22px;
+  width: 141px;
+  height: 46px;
+  position: relative;
+  bottom: 10px;
+  border: none;
+  color: #fff;
+  background-color: #b67c5a;
+  transition: 0.5s all ease;
+  moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+}
+.btn-default:hover {
+  background-color: #fff;
+}
+/* Default Variables */
+/* Mixins */
+.transitions {
+  transition: 0.5s all ease;
+  moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
 }
 /* Navigation section */
-.navigation {
-  height: 115px;
+.smallNavigation {
+  height: 40px;
   width: 100%;
-  background-color: transparent;
+  background-color: #1c1f23;
 }
-.navigation i {
-  font-size: 23px;
-  padding-left: 52px;
-  padding-top: 43px;
-  float: left;
-  color: #2e2e2e;
-}
-.navigation .logo {
-  height: 100px;
-  width: 200px;
-  float: left;
-  display: table;
-  margin: 0 auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-.navigation .logo span {
-  font-family: 'Dancing Script', cursive;
-  text-align: center;
+.smallNavigation div {
   margin: 0 auto;
   display: table;
   float: none;
-  font-size: 37px;
-  margin-top: 0px;
-  padding-top: 30px;
-  font-weight: 900;
-  color: #2e2e2e;
+  width: 100%;
 }
-.navigation a {
-  letter-spacing: 4px;
-  font-size: 12px;
-  font-weight: 700;
-  float: right;
+.smallNavigation div ul {
+  list-style: none;
+  margin: 0px;
   padding: 0px;
-  padding-right: 61px;
-  padding-top: 45px;
+  margin: 0 auto;
+  display: table;
+}
+.smallNavigation div ul li:nth-child(1) {
+  width: 136px;
+}
+.smallNavigation div ul li:nth-child(1) .select {
+  height: 40px;
+  width: 113px;
+  color: #f4f7f8;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 35px;
+  padding-top: 13px;
   cursor: pointer;
+}
+.smallNavigation div ul li:nth-child(1) .select i {
+  color: #ddd!important;
+  font-size: 8px;
+  padding-left: 4px;
+  position: relative;
+  bottom: 2px;
+}
+.smallNavigation div ul li:nth-child(1) .options {
+  height: 100px;
+  width: 135px;
+  background-color: #1c1f23;
+  margin-top: 0px;
+  float: left;
+}
+.smallNavigation div ul li:nth-child(1) .options span {
+  color: #fff;
+  display: block;
+  color: #f4f7f8;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 13px;
+  cursor: pointer;
+}
+.smallNavigation div ul li:nth-child(2) {
+  width: 136px;
+}
+.smallNavigation div ul li:nth-child(2) .currency {
+  height: 40px;
+  width: 113px;
+  color: #f4f7f8;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 35px;
+  padding-top: 13px;
+  cursor: pointer;
+}
+.smallNavigation div ul li:nth-child(2) .currency i {
+  color: #ddd!important;
+  font-size: 8px;
+  padding-left: 4px;
+  position: relative;
+  bottom: 2px;
+}
+.smallNavigation div ul li:nth-child(2) .currencyOption {
+  height: 100px;
+  width: 135px;
+  background-color: #1c1f23;
+  margin-top: 0px;
+  float: left;
+}
+.smallNavigation div ul li:nth-child(2) .currencyOption span {
+  color: #fff;
+  display: block;
+  color: #f4f7f8;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 13px;
+  cursor: pointer;
+}
+.smallNavigation div ul li:nth-child(3) {
+  width: 311px;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #fff;
+  text-align: center;
+  padding-top: 12px;
+}
+.smallNavigation div ul li:nth-child(4) {
+  width: 227px;
+}
+.smallNavigation div ul li:nth-child(5) {
+  width: 171px;
+  cursor: pointer;
+}
+.smallNavigation div ul li:nth-child(5) i {
+  color: #b67c5a;
+  padding-left: 29px;
+  padding-top: 11px;
+  transition: 0.5s all ease;
+  moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+}
+.smallNavigation div ul li:nth-child(5) i:hover {
+  color: #fff;
+}
+.smallNavigation div ul li:nth-child(5) a {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: .1em;
+  text-align: center;
+  color: #fff;
+  padding-left: 10px;
   text-decoration: none;
 }
-.navigation a span {
-  font-weight: bold;
-  color: #155399;
-  border: 2px solid #155399;
-  border-radius: 100px;
-  float: right;
-  padding: 0px;
-  height: 25px;
-  width: 25px;
-  border-radius: 25px;
-  font-size: 10px;
-  font-family: 'Lato';
-  padding-left: 4px;
-  margin-left: 0px;
-  position: relative;
-  left: 9px;
-  padding-top: 1px;
-  bottom: 2px;
-  font-size: 12px;
+.smallNavigation div ul li:nth-child(5) span {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  color: #f4f7f8;
+  margin-left: 5px;
   text-align: center;
+  display: inline-block;
+  padding: 4px 6px;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-bottom: -3px;
+  height: 19px;
+  font-size: 10px;
+}
+.smallNavigation div ul li:nth-child(6) {
+  width: 197px;
+  cursor: pointer;
+}
+.smallNavigation div ul li:nth-child(6) i {
+  color: #b67c5a;
+  padding-left: 29px;
+  padding-top: 11px;
+  transition: 0.5s all ease;
+  moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+}
+.smallNavigation div ul li:nth-child(6) i:hover {
+  color: #fff;
+}
+.smallNavigation div ul li:nth-child(6) a {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: .1em;
+  text-align: center;
+  color: #fff;
+  padding-left: 10px;
+  text-decoration: none;
+}
+.smallNavigation div ul li:nth-child(6) span {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  color: #f4f7f8;
+  margin-left: 18px;
+  text-align: center;
+  display: inline-block;
+  padding: 4px 6px;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-bottom: -3px;
+  height: 19px;
+  font-size: 10px;
+}
+.smallNavigation div ul li:nth-child(7) {
+  padding-top: 9px;
+  width: 169px;
+  cursor: pointer;
+  text-align: center;
+}
+.smallNavigation div ul li:nth-child(7) a {
+  color: #f4f7f8;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: .1em;
+}
+.smallNavigation div ul li {
+  float: left;
+  border-right: 1px solid #3e4044;
+  height: 40px;
+}
+/* secondary navigation section */
+.secondaryNavigation {
+  height: 93px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaeb;
+}
+.secondaryNavigation .socials {
+  padding: 0px;
   margin: 0px;
+  top: 40px;
+  left: 10px;
+  position: relative;
+  list-style: none;
+  float: left;
+}
+.secondaryNavigation .socials li {
+  float: left;
+  padding-left: 18px;
+  padding-right: 9px;
+  font-size: 14px;
+}
+.secondaryNavigation .socials li i {
+  font-size: 14px;
+}
+.secondaryNavigation .logo {
+  margin: 0px auto;
+  display: table;
+  float: none;
+  padding: 0px;
+  width: 300px;
+}
+.secondaryNavigation .logo h1 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 22px;
+  float: none;
+  font-weight: 600;
+  letter-spacing: 21px;
+  padding-top: 37px;
+}
+.secondaryNavigation .search {
+  float: right;
+  position: relative;
+  bottom: 25px;
+  list-style: none;
+  margin-right: 9px;
+  margin-top: 2px;
+}
+.secondaryNavigation .search li {
+  padding-right: 23px;
+  font-size: 16px;
+  float: left;
+}
+/* navbar main */
+.navbar-default .navbar-nav > li > a {
+  color: #777;
+  font-size: 12px;
+  line-height: 2;
+  border: 0;
+  border-radius: 5px;
+  transition: color 0.3s ease-out;
+  text-transform: uppercase;
+  color: #1c1f23;
+  font-weight: 600;
+  transition: 0.5s all ease;
+  moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #b67c5a;
+}
+.navbar-default {
+  background-color: transparent;
+  border: none;
+  width: 100%!important;
+  min-height: 39px!important;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.navbar .navbar-nav {
+  height: 15px;
+}
+/* header section */
+.header {
+  height: 1000px;
+  width: 100%;
+  background-image: url('../assets/header/header1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.header .overlay {
+  height: 1000px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+}
+.header .overlay h3 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  color: #b67c5a;
+  margin-bottom: 0px;
+  padding-top: 303px;
+}
+.header .overlay h2 {
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.header .overlay ul {
+  margin: 40px auto;
+  display: table;
+  float: none;
+  list-style: none;
+}
+.header .overlay ul li {
+  float: left;
+  font-size: 10px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+}
+/* mens section */
+.mensSection {
+  height: 736px;
+  width: 100%;
+  margin-top: 10px;
+}
+.mensSection #carousel-example-generic {
+  margin: 0 auto;
+  display: table;
+  float: none;
+}
+.mensSection .mensProducts {
+  width: 50%;
+  height: 100%;
+  background-color: #f9f9f9;
+  float: left;
+}
+.mensSection .mensProducts h1 {
+  font-size: 60px;
+  font-weight: 700;
+  background-size: cover;
+  text-align: center;
+  padding-top: 70px;
+}
+.mensSection .mensProducts h6 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #b67c5a;
+  margin-top: -5px;
+}
+.mensSection .mensProducts .itemSingle:nth-child(2) {
+  margin-left: 20px;
+}
+.mensSection .mensProducts .itemSingle:nth-child(2) .itemSingleImage {
+  background-image: url('../assets/products/men2.jpg');
+}
+.mensSection .mensProducts .itemSingle {
+  height: 346px;
+  width: 224px;
+  margin-left: 0px;
+  margin-top: 66px;
+  float: left;
+}
+.mensSection .mensProducts .itemSingle .itemSingleImage {
+  height: 257px;
+  width: 224px;
+  background-image: url('../assets/products/men1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.mensSection .mensProducts .itemSingle h6 {
+  font-size: 10px;
+  font-weight: 500;
+  color: #7b7d7f;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 19px;
+}
+.mensSection .mensProducts .itemSingle h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c1f23;
+  text-align: center;
+  padding-top: 6px;
+}
+.mensSection .mensProducts .itemSingle h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b67c5a;
+  text-align: center;
+  margin-top: 13px;
+}
+.mensSection .menProductImageSingle {
+  height: 100%;
+  width: 49%;
+  background-image: url('../assets/products/1.jpg');
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin-left: 10px;
+}
+.mensSection .carousel-indicators .active {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  margin-left: 10px;
+  background-color: #b67c5a;
+}
+.mensSection .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  background-color: #ddd;
+  position: relative;
+  top: 77px;
+  margin-left: 10px;
+}
+/* women section */
+.womenSection {
+  height: 736px;
+  width: 100%;
+  margin-top: 10px;
+}
+.womenSection #carousel-example-generic {
+  margin: 0 auto;
+  display: table;
+  float: none;
+}
+.womenSection .mensProducts {
+  width: 50%;
+  height: 100%;
+  background-color: #f9f9f9;
+  float: left;
+}
+.womenSection .mensProducts h1 {
+  font-size: 60px;
+  font-weight: 700;
+  background-size: cover;
+  text-align: center;
+  padding-top: 70px;
+}
+.womenSection .mensProducts h6 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #b67c5a;
+  margin-top: -5px;
+}
+.womenSection .mensProducts .itemSingle:nth-child(2) {
+  margin-left: 20px;
+}
+.womenSection .mensProducts .itemSingle:nth-child(2) .itemSingleImage {
+  background-image: url('../assets/products/men2.jpg');
+}
+.womenSection .mensProducts .itemSingle {
+  height: 346px;
+  width: 224px;
+  margin-left: 0px;
+  margin-top: 66px;
+  float: left;
+}
+.womenSection .mensProducts .itemSingle .itemSingleImage {
+  height: 257px;
+  width: 224px;
+  background-image: url('../assets/products/men1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.womenSection .mensProducts .itemSingle h6 {
+  font-size: 10px;
+  font-weight: 500;
+  color: #7b7d7f;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 19px;
+}
+.womenSection .mensProducts .itemSingle h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c1f23;
+  text-align: center;
+  padding-top: 6px;
+}
+.womenSection .mensProducts .itemSingle h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b67c5a;
+  text-align: center;
+  margin-top: 13px;
+}
+.womenSection .menProductImageSingle {
+  height: 100%;
+  width: 49%;
+  background-image: url('../assets/products/1.jpg');
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin-left: 10px;
+}
+.womenSection .carousel-indicators .active {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  margin-left: 10px;
+  background-color: #b67c5a;
+}
+.womenSection .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  background-color: #ddd;
+  position: relative;
+  top: 77px;
+  margin-left: 10px;
+}
+.womenSection .menProductImageSingle {
+  background-image: url('../assets/products/2.jpg');
+  margin-left: 0px;
+  width: 50%;
+}
+.womenSection #carousel-example-generic2 {
+  margin: 0 auto;
+  display: table;
+  float: none;
+}
+.womenSection .mensProducts {
+  margin-left: 9px;
+  width: 49%;
+}
+.womenSection .mensProducts .itemSingle2:nth-child(2) {
+  margin-left: 20px;
+}
+.womenSection .mensProducts .itemSingle2:nth-child(2) .itemSingleImage {
+  background-image: url('../assets/products/women2.jpg');
+}
+.womenSection .mensProducts .itemSingle2 {
+  height: 346px;
+  width: 224px;
+  margin-left: 0px;
+  margin-top: 66px;
+  float: left;
+}
+.womenSection .mensProducts .itemSingle2 .itemSingleImage {
+  height: 257px;
+  width: 224px;
+  background-image: url('../assets/products/women1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.womenSection .mensProducts .itemSingle2 h6 {
+  font-size: 10px;
+  font-weight: 500;
+  color: #7b7d7f;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 19px;
+}
+.womenSection .mensProducts .itemSingle2 h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c1f23;
+  text-align: center;
+  padding-top: 6px;
+}
+.womenSection .mensProducts .itemSingle2 h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b67c5a;
+  text-align: center;
+  margin-top: 13px;
+}
+/* childrensSection */
+.childrensSection {
+  height: 736px;
+  width: 100%;
+  margin-top: 10px;
+}
+.childrensSection #carousel-example-generic {
+  margin: 0 auto;
+  display: table;
+  float: none;
+}
+.childrensSection .mensProducts {
+  width: 50%;
+  height: 100%;
+  background-color: #f9f9f9;
+  float: left;
+}
+.childrensSection .mensProducts h1 {
+  font-size: 60px;
+  font-weight: 700;
+  background-size: cover;
+  text-align: center;
+  padding-top: 70px;
+}
+.childrensSection .mensProducts h6 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #b67c5a;
+  margin-top: -5px;
+}
+.childrensSection .mensProducts .itemSingle:nth-child(2) {
+  margin-left: 20px;
+}
+.childrensSection .mensProducts .itemSingle:nth-child(2) .itemSingleImage {
+  background-image: url('../assets/products/men2.jpg');
+}
+.childrensSection .mensProducts .itemSingle {
+  height: 346px;
+  width: 224px;
+  margin-left: 0px;
+  margin-top: 66px;
+  float: left;
+}
+.childrensSection .mensProducts .itemSingle .itemSingleImage {
+  height: 257px;
+  width: 224px;
+  background-image: url('../assets/products/men1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.childrensSection .mensProducts .itemSingle h6 {
+  font-size: 10px;
+  font-weight: 500;
+  color: #7b7d7f;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 19px;
+}
+.childrensSection .mensProducts .itemSingle h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c1f23;
+  text-align: center;
+  padding-top: 6px;
+}
+.childrensSection .mensProducts .itemSingle h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b67c5a;
+  text-align: center;
+  margin-top: 13px;
+}
+.childrensSection .menProductImageSingle {
+  height: 100%;
+  width: 49%;
+  background-image: url('../assets/products/1.jpg');
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin-left: 10px;
+}
+.childrensSection .carousel-indicators .active {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  margin-left: 10px;
+  background-color: #b67c5a;
+}
+.childrensSection .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  background-color: #ddd;
+  position: relative;
+  top: 77px;
+  margin-left: 10px;
+}
+.childrensSection .menProductImageSingle {
+  background-image: url('../assets/products/3.jpg');
+}
+.childrensSection #carousel-example-generic3 {
+  margin: 0 auto;
+  display: table;
+  float: none;
+}
+.childrensSection .mensProducts .itemSingle3:nth-child(2) {
+  margin-left: 20px;
+}
+.childrensSection .mensProducts .itemSingle3:nth-child(2) .itemSingleImage {
+  background-image: url('../assets/products/children2.jpg');
+}
+.childrensSection .mensProducts .itemSingle3 {
+  height: 346px;
+  width: 224px;
+  margin-left: 0px;
+  margin-top: 66px;
+  float: left;
+}
+.childrensSection .mensProducts .itemSingle3 .itemSingleImage {
+  height: 257px;
+  width: 224px;
+  background-image: url('../assets/products/children1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.childrensSection .mensProducts .itemSingle3 h6 {
+  font-size: 10px;
+  font-weight: 500;
+  color: #7b7d7f;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 19px;
+}
+.childrensSection .mensProducts .itemSingle3 h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c1f23;
+  text-align: center;
+  padding-top: 6px;
+}
+.childrensSection .mensProducts .itemSingle3 h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b67c5a;
+  text-align: center;
+  margin-top: 13px;
+}
+/* acessories section */
+.acessoriesSection {
+  height: 736px;
+  width: 100%;
+  margin-top: 10px;
+}
+.acessoriesSection #carousel-example-generic {
+  margin: 0 auto;
+  display: table;
+  float: none;
+}
+.acessoriesSection .mensProducts {
+  width: 50%;
+  height: 100%;
+  background-color: #f9f9f9;
+  float: left;
+}
+.acessoriesSection .mensProducts h1 {
+  font-size: 60px;
+  font-weight: 700;
+  background-size: cover;
+  text-align: center;
+  padding-top: 70px;
+}
+.acessoriesSection .mensProducts h6 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #b67c5a;
+  margin-top: -5px;
+}
+.acessoriesSection .mensProducts .itemSingle:nth-child(2) {
+  margin-left: 20px;
+}
+.acessoriesSection .mensProducts .itemSingle:nth-child(2) .itemSingleImage {
+  background-image: url('../assets/products/men2.jpg');
+}
+.acessoriesSection .mensProducts .itemSingle {
+  height: 346px;
+  width: 224px;
+  margin-left: 0px;
+  margin-top: 66px;
+  float: left;
+}
+.acessoriesSection .mensProducts .itemSingle .itemSingleImage {
+  height: 257px;
+  width: 224px;
+  background-image: url('../assets/products/men1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.acessoriesSection .mensProducts .itemSingle h6 {
+  font-size: 10px;
+  font-weight: 500;
+  color: #7b7d7f;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 19px;
+}
+.acessoriesSection .mensProducts .itemSingle h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c1f23;
+  text-align: center;
+  padding-top: 6px;
+}
+.acessoriesSection .mensProducts .itemSingle h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b67c5a;
+  text-align: center;
+  margin-top: 13px;
+}
+.acessoriesSection .menProductImageSingle {
+  height: 100%;
+  width: 49%;
+  background-image: url('../assets/products/1.jpg');
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin-left: 10px;
+}
+.acessoriesSection .carousel-indicators .active {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  margin-left: 10px;
+  background-color: #b67c5a;
+}
+.acessoriesSection .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  background-color: #ddd;
+  position: relative;
+  top: 77px;
+  margin-left: 10px;
+}
+.acessoriesSection .menProductImageSingle {
+  background-image: url('../assets/products/4.jpg');
+  margin-left: 0px;
+  width: 50%;
+}
+.acessoriesSection #carousel-example-generic4 {
+  margin: 0 auto;
+  display: table;
+  float: none;
+}
+.acessoriesSection .mensProducts {
+  margin-left: 9px;
+  width: 49%;
+}
+.acessoriesSection .mensProducts .itemSingle4:nth-child(2) {
+  margin-left: 20px;
+}
+.acessoriesSection .mensProducts .itemSingle4:nth-child(2) .itemSingleImage {
+  background-image: url('../assets/products/acessories2.jpg');
+}
+.acessoriesSection .mensProducts .itemSingle4 {
+  height: 346px;
+  width: 224px;
+  margin-left: 0px;
+  margin-top: 66px;
+  float: left;
+}
+.acessoriesSection .mensProducts .itemSingle4 .itemSingleImage {
+  height: 257px;
+  width: 224px;
+  background-image: url('../assets/products/acessories1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.acessoriesSection .mensProducts .itemSingle4 h6 {
+  font-size: 10px;
+  font-weight: 500;
+  color: #7b7d7f;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 19px;
+}
+.acessoriesSection .mensProducts .itemSingle4 h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c1f23;
+  text-align: center;
+  padding-top: 6px;
+}
+.acessoriesSection .mensProducts .itemSingle4 h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b67c5a;
+  text-align: center;
+  margin-top: 13px;
+}
+/* all products section */
+.allProducts {
+  height: 524px;
+  margin: 8px auto;
+  display: table;
+  float: none;
+}
+.allProducts .itemLeftProducts:nth-child(1) {
+  margin-left: 16px;
+}
+.allProducts .itemLeftProducts {
+  padding: 0px;
+  width: 401px;
+}
+.allProducts .itemLeftProducts .farLeftItem:nth-child(4) {
+  margin-left: 8px;
+  margin-top: 8px;
+}
+.allProducts .itemLeftProducts .farLeftItem {
+  height: 250px;
+  width: 125px;
+  float: left;
+}
+.allProducts .itemLeftProducts .farLeftItem .smallImage {
+  height: 125px;
+  width: 125px;
+}
+.allProducts .itemLeftProducts .farLeftItem .itemSingleProductsSmall:nth-child(2) {
+  margin-top: 8px;
+}
+.allProducts .itemLeftProducts .farLeftItem .itemSingleProductsSmall {
+  height: 125px;
+  width: 123px;
+}
+.allProducts .itemLeftProducts .itemRightFar:nth-child(3) {
+  margin-left: 0px;
+  margin-top: 8px;
+}
+.allProducts .itemLeftProducts .itemRightFar {
+  height: 258px;
+  width: 259px;
+  float: left!important;
+  margin-left: 8px;
+}
+.allProducts .itemLeftProducts .itemRightFar .largeImage {
+  height: 258px;
+  width: 259px;
+}
+.allProducts .itemCenterProducts {
+  height: 100%;
+  width: 531px;
+  padding: 0px;
+}
+.allProducts .itemCenterProducts .itemCenterProductsSmall:nth-child(2) {
+  margin-left: 8px;
+}
+.allProducts .itemCenterProducts .itemCenterProductsSmall:nth-child(3) {
+  margin-left: 8px;
+}
+.allProducts .itemCenterProducts .itemCenterProductsSmall:nth-child(4) {
+  margin-left: 8px;
+}
+.allProducts .itemCenterProducts .itemCenterProductsSmall:nth-child(7) {
+  margin-top: 8px;
+}
+.allProducts .itemCenterProducts .itemCenterProductsSmall:nth-child(8) {
+  margin-left: 8px;
+  margin-top: 8px;
+}
+.allProducts .itemCenterProducts .itemCenterProductsSmall:nth-child(9) {
+  margin-left: 8px;
+  margin-top: 8px;
+}
+.allProducts .itemCenterProducts .itemCenterProductsSmall:nth-child(10) {
+  margin-left: 8px;
+  margin-top: 8px;
+}
+.allProducts .itemCenterProducts .itemCenterProductsSmall {
+  height: 128px;
+  width: 125px;
+  float: left;
+}
+.allProducts .itemCenterProducts .itemCenterProductsSmall .smallImage {
+  height: 125px;
+  width: 125px;
+}
+.allProducts .itemCenterProducts .itemTrendSetter {
+  height: 257px;
+  width: 524px;
+  background-color: #ddd;
+  margin-top: 6px;
+}
+.allProducts .itemCenterProducts .itemTrendSetter p {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #b67c5a;
+  margin-top: -5px;
+  padding-top: 120px;
+}
+/* footer section */
+.footer {
+  height: 509px;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+.footer .newsLetter {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #eaeaeb;
+}
+.footer .newsLetter .newsLetterCenter {
+  margin: 0 auto;
+  display: table;
+  float: none;
+  width: 688px;
+  padding-top: 36px;
+}
+.footer .newsLetter .newsLetterCenter h1 {
+  float: left;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1c1f23;
+  margin-right: 21px;
+  margin-left: 19px;
+}
+.footer .newsLetter .newsLetterCenter .form-control {
+  display: block;
+  width: 381px;
+  height: 44px;
+  float: left;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  position: relative;
+  bottom: 9px;
+}
+.footer .itemSocials {
+  width: 300px;
+  width: 280px;
+  margin-top: 125px;
+}
+.footer .itemSocials ul {
+  list-style: none;
+}
+.footer .itemSocials ul li {
+  float: left;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 9px;
+}
+.footer .itemSocials .copyrights {
+  font-size: 12px;
+  font-weight: 400;
+  color: #a8aaab;
+  text-align: center;
+  padding-top: 13px;
+}
+.footer .itemFooterOptions:nth-child(2) {
+  margin-left: 101px;
+}
+.footer .itemFooterOptions:nth-child(3) {
+  margin-left: 36px;
+}
+.footer .itemFooterOptions:nth-child(4) {
+  margin-left: 36px;
+}
+.footer .itemFooterOptions:nth-child(5) {
+  margin-left: 36px;
+}
+.footer .itemFooterOptions {
+  height: auto;
+  width: 158px;
+  margin-top: 108px;
+}
+.footer .itemFooterOptions h1 {
+  font-size: 14px;
+  line-height: 1.1;
+  color: #1c1f23;
+  font-weight: 600;
+  padding-left: 17px;
+  padding-top: 10px;
+}
+.footer .itemFooterOptions ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 18px;
+  margin-top: 34px;
+}
+.footer .itemFooterOptions ul li {
+  padding-bottom: 15px;
+}
+.footer .itemFooterOptions ul li a {
+  font-weight: 400;
+  color: #7b7d7f;
+}
+/*============================================================
+            
+ Media Queries For Different Mobile Devices and Tablets 
+
+===============================================================*/
+/* for small desktop screen */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* secondary navigation */
+  .secondaryNavigation .logo {
+    float: left;
+    margin-left: 24px;
+  }
+  .secondaryNavigation .search {
+    float: right;
+    position: relative;
+    bottom: 0px;
+    list-style: none;
+    margin-right: 9px;
+    margin-top: 37px;
+  }
+  /* men section */
+  .mensSection {
+    height: 1169px;
+  }
+  .mensSection .mensProducts {
+    width: 100%;
+  }
+  .mensSection .mensProducts h6 {
+    font-size: 11px;
+  }
+  .mensSection .mensProducts .itemSingle:nth-child(2) {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .mensSection .mensProducts .itemSingle {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .mensSection .menProductImageSingle {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/products/1.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 0px;
+  }
+  .womenSection .menProductImageSingle {
+    background-image: url(../assets/products/2.jpg);
+    margin-left: 0px;
+    width: 100%;
+  }
+  /* women section */
+  .womenSection {
+    height: 1169px;
+  }
+  .womenSection .mensProducts {
+    width: 100%;
+  }
+  .womenSection .mensProducts h6 {
+    font-size: 11px;
+  }
+  .womenSection .mensProducts .itemSingle2:nth-child(2) {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .womenSection .mensProducts .itemSingle2 {
+    height: 346px;
+    width: 224px;
+    float: left;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .womenSection .menProductImageSingle {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/products/2.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 0px;
+  }
+  .womenSection .mensProducts {
+    margin-left: 0px;
+  }
+  /* children section */
+  .childrensSection {
+    height: 1169px;
+  }
+  .childrensSection .mensProducts {
+    width: 100%;
+  }
+  .childrensSection .mensProducts h6 {
+    font-size: 11px;
+  }
+  .childrensSection .mensProducts .itemSingle3:nth-child(2) {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .childrensSection .mensProducts .itemSingle3 {
+    height: 346px;
+    width: 224px;
+    float: left;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .childrensSection .menProductImageSingle {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/products/3.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 0px;
+  }
+  .childrensSection .mensProducts {
+    margin-left: 0px;
+  }
+  /* accessories section */
+  .acessoriesSection {
+    height: 1169px;
+  }
+  .acessoriesSection .mensProducts {
+    width: 100%;
+  }
+  .acessoriesSection .mensProducts h6 {
+    font-size: 11px;
+  }
+  .acessoriesSection .mensProducts .itemSingle4:nth-child(2) {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .acessoriesSection .mensProducts .itemSingle4 {
+    height: 346px;
+    width: 224px;
+    float: left;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .acessoriesSection .menProductImageSingle {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/products/4.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 0px;
+  }
+  .acessoriesSection .mensProducts {
+    margin-left: 0px;
+  }
+  /* footer section */
+  .footer {
+    height: 1500px;
+    padding: 20px;
+  }
+  .footer .newsLetter .newsLetterCenter {
+    width: 100%;
+  }
+  .footer .newsLetter .newsLetterCenter h1 {
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+    float: none;
+    margin-bottom: 20px;
+  }
+  .footer .newsLetter .newsLetterCenter .form-control {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .btn-default {
+    margin: 0 auto;
+    display: table;
+    float: none;
+  }
+  .footer .itemSocials {
+    width: 100%;
+  }
+  .footer .itemSocials ul {
+    list-style: none;
+    display: table;
+    width: 354px;
+    float: none;
+    margin: 0 auto;
+  }
+  .footer .itemSocials ul li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer .itemFooterOptions:nth-child(2) {
+    margin: 108px auto;
+    display: table;
+    float: none;
+  }
+  .footer .itemFooterOptions h1 {
+    font-size: 14px;
+    line-height: 1.1;
+    color: #1c1f23;
+    font-weight: 600;
+    padding-left: 0px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .footer .itemFooterOptions:nth-child(3) {
+    margin-left: 0px;
+    display: table;
+    float: none;
+    margin: 108px auto;
+  }
+  .footer .itemFooterOptions:nth-child(4) {
+    margin-left: 0px;
+    display: table;
+    float: none;
+    margin: 108px auto;
+  }
+  .footer .itemFooterOptions:nth-child(5) {
+    margin-left: 0px;
+    display: table;
+    float: none;
+    margin: 108px auto;
+  }
+  .footer .itemFooterOptions ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 34px;
+    text-align: center;
+  }
+}
+/* for tablet screens */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* secondary navigation */
+  .secondaryNavigation .logo {
+    float: left;
+    margin-left: 24px;
+  }
+  .secondaryNavigation .search {
+    float: right;
+    position: relative;
+    bottom: 0px;
+    list-style: none;
+    margin-right: 9px;
+    margin-top: 37px;
+  }
+  /* men section */
+  .mensSection {
+    height: 1169px;
+  }
+  .mensSection .mensProducts {
+    width: 100%;
+  }
+  .mensSection .mensProducts h6 {
+    font-size: 11px;
+  }
+  .mensSection .mensProducts .itemSingle:nth-child(2) {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .mensSection .mensProducts .itemSingle {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .mensSection .menProductImageSingle {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/products/1.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 0px;
+  }
+  .womenSection .menProductImageSingle {
+    background-image: url(../assets/products/2.jpg);
+    margin-left: 0px;
+    width: 100%;
+  }
+  /* women section */
+  .womenSection {
+    height: 1169px;
+  }
+  .womenSection .mensProducts {
+    width: 100%;
+  }
+  .womenSection .mensProducts h6 {
+    font-size: 11px;
+  }
+  .womenSection .mensProducts .itemSingle2:nth-child(2) {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .womenSection .mensProducts .itemSingle2 {
+    height: 346px;
+    width: 224px;
+    float: left;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .womenSection .menProductImageSingle {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/products/2.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 0px;
+  }
+  .womenSection .mensProducts {
+    margin-left: 0px;
+  }
+  /* children section */
+  .childrensSection {
+    height: 1169px;
+  }
+  .childrensSection .mensProducts {
+    width: 100%;
+  }
+  .childrensSection .mensProducts h6 {
+    font-size: 11px;
+  }
+  .childrensSection .mensProducts .itemSingle3:nth-child(2) {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .childrensSection .mensProducts .itemSingle3 {
+    height: 346px;
+    width: 224px;
+    float: left;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .childrensSection .menProductImageSingle {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/products/3.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 0px;
+  }
+  .childrensSection .mensProducts {
+    margin-left: 0px;
+  }
+  /* accessories section */
+  .acessoriesSection {
+    height: 1169px;
+  }
+  .acessoriesSection .mensProducts {
+    width: 100%;
+  }
+  .acessoriesSection .mensProducts h6 {
+    font-size: 11px;
+  }
+  .acessoriesSection .mensProducts .itemSingle4:nth-child(2) {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .acessoriesSection .mensProducts .itemSingle4 {
+    height: 346px;
+    width: 224px;
+    float: left;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .acessoriesSection .menProductImageSingle {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/products/4.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 0px;
+  }
+  .acessoriesSection .mensProducts {
+    margin-left: 0px;
+  }
+  /* footer section */
+  .footer {
+    height: 1500px;
+    padding: 20px;
+  }
+  .footer .newsLetter .newsLetterCenter {
+    width: 100%;
+  }
+  .footer .newsLetter .newsLetterCenter h1 {
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+    float: none;
+    margin-bottom: 20px;
+  }
+  .footer .newsLetter .newsLetterCenter .form-control {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .btn-default {
+    margin: 0 auto;
+    display: table;
+    float: none;
+  }
+  .footer .itemSocials {
+    width: 100%;
+  }
+  .footer .itemSocials ul {
+    list-style: none;
+    display: table;
+    width: 354px;
+    float: none;
+    margin: 0 auto;
+  }
+  .footer .itemSocials ul li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer .itemFooterOptions:nth-child(2) {
+    margin: 108px auto;
+    display: table;
+    float: none;
+  }
+  .footer .itemFooterOptions h1 {
+    font-size: 14px;
+    line-height: 1.1;
+    color: #1c1f23;
+    font-weight: 600;
+    padding-left: 0px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .footer .itemFooterOptions:nth-child(3) {
+    margin-left: 0px;
+    display: table;
+    float: none;
+    margin: 108px auto;
+  }
+  .footer .itemFooterOptions:nth-child(4) {
+    margin-left: 0px;
+    display: table;
+    float: none;
+    margin: 108px auto;
+  }
+  .footer .itemFooterOptions:nth-child(5) {
+    margin-left: 0px;
+    display: table;
+    float: none;
+    margin: 108px auto;
+  }
+  .footer .itemFooterOptions ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 34px;
+    text-align: center;
+  }
+}
+/* for mobile screens */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  /* secondary navigation */
+  .secondaryNavigation .logo {
+    float: left;
+    margin-left: 24px;
+  }
+  .secondaryNavigation .search {
+    float: right;
+    position: relative;
+    bottom: 0px;
+    list-style: none;
+    margin-right: 9px;
+    margin-top: 37px;
+  }
+  /* main navigation */
+  .navbar-toggle {
+    position: absolute;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    right: 30px;
+  }
+  .navbar .navbar-collapse {
+    margin-top: 49px;
+  }
+  /* men section */
+  .mensSection {
+    height: 1169px;
+  }
+  .mensSection .mensProducts {
+    width: 100%;
+  }
+  .mensSection .mensProducts h6 {
+    font-size: 11px;
+  }
+  .mensSection .mensProducts .itemSingle:nth-child(2) {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .mensSection .mensProducts .itemSingle {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .mensSection .menProductImageSingle {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/products/1.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 0px;
+  }
+  .womenSection .menProductImageSingle {
+    background-image: url(../assets/products/2.jpg);
+    margin-left: 0px;
+    width: 100%;
+  }
+  /* women section */
+  .womenSection {
+    height: 1169px;
+  }
+  .womenSection .mensProducts {
+    width: 100%;
+  }
+  .womenSection .mensProducts h6 {
+    font-size: 11px;
+  }
+  .womenSection .mensProducts .itemSingle2:nth-child(2) {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .womenSection .mensProducts .itemSingle2 {
+    height: 346px;
+    width: 224px;
+    float: left;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .womenSection .menProductImageSingle {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/products/2.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 0px;
+  }
+  .womenSection .mensProducts {
+    margin-left: 0px;
+  }
+  /* children section */
+  .childrensSection {
+    height: 1169px;
+  }
+  .childrensSection .mensProducts {
+    width: 100%;
+  }
+  .childrensSection .mensProducts h6 {
+    font-size: 11px;
+  }
+  .childrensSection .mensProducts .itemSingle3:nth-child(2) {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .childrensSection .mensProducts .itemSingle3 {
+    height: 346px;
+    width: 224px;
+    float: left;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .childrensSection .menProductImageSingle {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/products/3.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 0px;
+  }
+  .childrensSection .mensProducts {
+    margin-left: 0px;
+  }
+  /* accessories section */
+  .acessoriesSection {
+    height: 1169px;
+  }
+  .acessoriesSection .mensProducts {
+    width: 100%;
+  }
+  .acessoriesSection .mensProducts h6 {
+    font-size: 11px;
+  }
+  .acessoriesSection .mensProducts .itemSingle4:nth-child(2) {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .acessoriesSection .mensProducts .itemSingle4 {
+    height: 346px;
+    width: 224px;
+    float: left;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .acessoriesSection .menProductImageSingle {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/products/4.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 0px;
+  }
+  .acessoriesSection .mensProducts {
+    margin-left: 0px;
+  }
+  /* footer section */
+  .footer {
+    height: 1500px;
+    padding: 20px;
+  }
+  .footer .newsLetter .newsLetterCenter {
+    width: 100%;
+  }
+  .footer .newsLetter .newsLetterCenter h1 {
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+    float: none;
+    margin-bottom: 20px;
+  }
+  .footer .newsLetter .newsLetterCenter .form-control {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .btn-default {
+    margin: 0 auto;
+    display: table;
+    float: none;
+  }
+  .footer .itemSocials {
+    width: 100%;
+  }
+  .footer .itemSocials ul {
+    list-style: none;
+    display: table;
+    float: none;
+    margin: 0 auto;
+  }
+  .footer .itemSocials ul li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer .itemFooterOptions:nth-child(2) {
+    margin: 108px auto;
+    display: table;
+    float: none;
+  }
+  .footer .itemFooterOptions h1 {
+    font-size: 14px;
+    line-height: 1.1;
+    color: #1c1f23;
+    font-weight: 600;
+    padding-left: 0px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .footer .itemFooterOptions:nth-child(3) {
+    margin-left: 0px;
+    display: table;
+    float: none;
+    margin: 108px auto;
+  }
+  .footer .itemFooterOptions:nth-child(4) {
+    margin-left: 0px;
+    display: table;
+    float: none;
+    margin: 108px auto;
+  }
+  .footer .itemFooterOptions:nth-child(5) {
+    margin-left: 0px;
+    display: table;
+    float: none;
+    margin: 108px auto;
+  }
+  .footer .itemFooterOptions ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 34px;
+    text-align: center;
+  }
+}
+/* for extra small screen */
+@media screen and (min-width: 280px) and (max-width: 480px) {
+  /* navbar top */
+  .smallNavigation div ul li:nth-child(5) {
+    width: 117px;
+    cursor: pointer;
+  }
+  .smallNavigation div ul li:nth-child(5) i {
+    color: #b67c5a;
+    padding-left: 6px;
+    padding-top: 11px;
+  }
+  .smallNavigation div ul li:nth-child(5) a {
+    padding-left: 2px;
+  }
+  .smallNavigation div ul li:nth-child(5) span {
+    margin-left: 5px;
+  }
+  .smallNavigation div ul li:nth-child(6) {
+    width: 130px;
+    cursor: pointer;
+  }
+  .smallNavigation div ul li:nth-child(6) i {
+    padding-left: 8px;
+  }
+  .smallNavigation div ul li:nth-child(6) a {
+    padding-left: 2px;
+  }
+  .smallNavigation div ul li:nth-child(6) span {
+    margin-left: 3px;
+  }
+  .smallNavigation div ul li:nth-child(7) {
+    width: 131px;
+  }
+  /* secondary navigation */
+  .secondaryNavigation .logo {
+    float: left;
+    margin-left: 24px;
+  }
+  /* main navigation */
+  .navbar-toggle {
+    position: absolute;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    right: 30px;
+  }
+  .navbar .navbar-collapse {
+    margin-top: 49px;
+  }
+  /* header section */
+  .header .overlay h2 {
+    font-size: 80px;
+    padding-top: 50px;
+  }
+  .header .overlay h3 {
+    font-size: 20px;
+  }
+  /* men section */
+  .mensSection {
+    height: 1169px;
+  }
+  .mensSection .mensProducts {
+    width: 100%;
+  }
+  .mensSection .mensProducts h6 {
+    font-size: 11px;
+  }
+  .mensSection .mensProducts .itemSingle:nth-child(2) {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .mensSection .mensProducts .itemSingle {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .mensSection .menProductImageSingle {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/products/1.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 0px;
+  }
+  .womenSection .menProductImageSingle {
+    background-image: url(../assets/products/2.jpg);
+    margin-left: 0px;
+    width: 100%;
+  }
+  /* women section */
+  .womenSection {
+    height: 1169px;
+  }
+  .womenSection .mensProducts {
+    width: 100%;
+  }
+  .womenSection .mensProducts h6 {
+    font-size: 11px;
+  }
+  .womenSection .mensProducts .itemSingle2:nth-child(2) {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .womenSection .mensProducts .itemSingle2 {
+    height: 346px;
+    width: 224px;
+    float: left;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .womenSection .menProductImageSingle {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/products/2.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 0px;
+  }
+  .womenSection .mensProducts {
+    margin-left: 0px;
+  }
+  /* children section */
+  .childrensSection {
+    height: 1169px;
+  }
+  .childrensSection .mensProducts {
+    width: 100%;
+  }
+  .childrensSection .mensProducts h6 {
+    font-size: 11px;
+  }
+  .childrensSection .mensProducts .itemSingle3:nth-child(2) {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .childrensSection .mensProducts .itemSingle3 {
+    height: 346px;
+    width: 224px;
+    float: left;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .childrensSection .menProductImageSingle {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/products/3.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 0px;
+  }
+  .childrensSection .mensProducts {
+    margin-left: 0px;
+  }
+  /* accessories section */
+  .acessoriesSection {
+    height: 1169px;
+  }
+  .acessoriesSection .mensProducts {
+    width: 100%;
+  }
+  .acessoriesSection .mensProducts h6 {
+    font-size: 11px;
+  }
+  .acessoriesSection .mensProducts .itemSingle4:nth-child(2) {
+    margin-left: 0px;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .acessoriesSection .mensProducts .itemSingle4 {
+    height: 346px;
+    width: 224px;
+    float: left;
+    margin: 66px auto;
+    display: table;
+    float: none;
+  }
+  .acessoriesSection .menProductImageSingle {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/products/4.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 0px;
+  }
+  .acessoriesSection .mensProducts {
+    margin-left: 0px;
+  }
+  /* footer section */
+  .footer {
+    height: 1500px;
+    padding: 20px;
+  }
+  .footer .newsLetter .newsLetterCenter {
+    width: 100%;
+  }
+  .footer .newsLetter .newsLetterCenter h1 {
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+    float: none;
+    margin-bottom: 20px;
+  }
+  .footer .newsLetter .newsLetterCenter .form-control {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .btn-default {
+    margin: 0 auto;
+    display: table;
+    float: none;
+  }
+  .footer .itemSocials {
+    width: 100%;
+  }
+  .footer .itemSocials ul {
+    list-style: none;
+    display: table;
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+  .footer .itemSocials ul li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer .itemFooterOptions:nth-child(2) {
+    margin: 108px auto;
+    display: table;
+    float: none;
+  }
+  .footer .itemFooterOptions h1 {
+    font-size: 14px;
+    line-height: 1.1;
+    color: #1c1f23;
+    font-weight: 600;
+    padding-left: 0px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .footer .itemFooterOptions:nth-child(3) {
+    margin-left: 0px;
+    display: table;
+    float: none;
+    margin: 108px auto;
+  }
+  .footer .itemFooterOptions:nth-child(4) {
+    margin-left: 0px;
+    display: table;
+    float: none;
+    margin: 108px auto;
+  }
+  .footer .itemFooterOptions:nth-child(5) {
+    margin-left: 0px;
+    display: table;
+    float: none;
+    margin: 108px auto;
+  }
+  .footer .itemFooterOptions ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 34px;
+    text-align: center;
+  }
 }
