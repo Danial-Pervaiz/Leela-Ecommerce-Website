@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leela E-Commerce Website | England's No.1 Selling Clothing Website</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- jquery ui stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-structure.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <!-- custom style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- small navigation -->
+    <nav class="smallNavigation">
+      <div>
+        <ul>
+          <li class="hidden-xs hidden-sm hidden-md">
+            <div class="select">
+              ENGLISH
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </div>
+            <div class="options">
+              <span>
+                FRENCH
+              </span>
+              <span>
+                SPANISH
+              </span>
+              <span>
+                ITALIAN
+              </span>
+            </div>
+          </li>
+          <li class="hidden-xs hidden-sm hidden-md">
+            <div class="currency">
+              USD 
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </div>
+            <div class="currencyOption">
+              <span>
+                PKR
+              </span>
+              <span>
+                DHM
+              </span>
+              <span>
+                DNR
+              </span>
+            </div>
+          </li>
+          <li class="hidden-xs hidden-sm hidden-md">
+            ORDER ONLINE OR CALL US 8 800 777-23-22
+          </li>
+          <li class="hidden-xs hidden-sm hidden-md"></li>
+          <li>
+            <i class="fa fa-exchange" aria-hidden="true"></i>
+            <a href="#">COMPARE</a>
+            <span>3</span>
+          </li>
+          <li>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <a href="#">FAVOURITES</a>
+            <span>3</span>
+          </li>
+          <li>
+            <a href="#">
+              LOGIN OR REGISTER
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- secondary navigation -->
+    <nav class="secondaryNavigation">
+      <ul class="socials hidden-xs hidden-sm hidden-md">
+        <li>
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </li>
+        <li>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </li>
+        <li>
+          <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+        </li>
+        <li>
+          <i class="fa fa-vk" aria-hidden="true"></i>
+        </li>
+      </ul>
+      <div class="logo">
+        <h1>LEELA</h1>  
+      </div>
+      <ul class="search">
+        <li>
+          <i class="fa fa-search"></i>
+        </li>
+        <li>
+          <i class="fa fa-shopping-cart"></i>
+        </li>
+      </ul>
+    </nav>
+    <div class="clearfix"></div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">Men Casuals</a></li>
+            <li><a href="#">Collectables</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="clearfix"></div>
+    <!-- header section -->
+    <header class="headerMensSection">
+      <div class="overlay">
+        <h2>Men's Wear</h2>
+        <ul>
+          <li>Men</li>
+          <li>Women</li>
+          <li>Acessories</li>
+          <li>Gadgets</li>
+        </ul>
+      </div>
+    </header>
+    <!-- Mens products section -->
+    <section class="MensProducts">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 itemFilters">
+            <p>Showing 1 to 10 of 243 products</p>
+            <!-- filter section -->
+            <div class="selectFilters">
+              <h1>SELECT PRICE</h1>
+              <div>
+                <input type="text"   readonly style="border:0; color:#f6931f; font-weight:bold;">
+              </div>
+              <div id="slider-range"></div>
+              <div class="clearfix"></div> 
+              <h2>PRICE: <span id="amount">$75 - $300</span></h2>
+            </div><!-- filter section ends -->
+            <!-- category section -->
+            <div class="categorySection">
+              <h1>CATEGORIES</h1>
+              <ul id="unOrderedLists">
+                <li class="itemsListsCategory">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  Clothing
+                  <ol class="innerOrderLists">
+                    <li class="active">Jackets</li>
+                    <li>Raincoats</li>
+                    <li>Shorts</li>
+                    <li>Pants</li>
+                    <li>Shirts</li>
+                    <li>SweatShirts</li>
+                  </ol>
+                </li>
+                <li class="itemsListsCategory">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  Shoes
+                  <ol class="innerOrderLists">
+                    <li class="active">Loafers</li>
+                    <li>Casuals</li>
+                    <li>Formals</li>
+                  </ol>
+                </li>
+                <li class="itemsListsCategory">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  Accessories
+                  <ol class="innerOrderLists">
+                    <li class="active">Watches for him</li>
+                    <li>Watches for her</li>
+                    <li>Rings</li>
+                    <li>Hats</li>
+                  </ol>
+                </li>
+                <li class="itemsListsCategory">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  Bags
+                  <ol class="innerOrderLists">
+                    <li class="active">Jackets</li>
+                    <li>Raincoats</li>
+                    <li>Shorts</li>
+                    <li>Pants</li>
+                    <li>Shirts</li>
+                    <li>SweatShirts</li>
+                  </ol>
+                </li>
+                <li class="itemsListsCategory">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  Discounted Products
+                  <ol class="innerOrderLists">
+                    <li class="active">Jackets</li>
+                    <li>Raincoats</li>
+                    <li>Shorts</li>
+                    <li>Pants</li>
+                    <li>Shirts</li>
+                    <li>SweatShirts</li>
+                  </ol>
+                </li>
+              </ul>
+            </div><!--  category section -->
+            <!-- color section -->
+            <div class="colorSection">  
+              <h1>Color</h1>
+              <ul>
+                <li>
+                  <input type="checkbox" name="" checked>
+                  <span>Black</span>
+                </li>
+                <li>
+                  <input type="checkbox" name="" checked>
+                  <span>White</span>
+                </li>
+                <li>
+                  <input type="checkbox" name="">
+                  <span>Green</span>
+                </li>
+                <li>
+                  <input type="checkbox" name="" checked>
+                  <span>Blue</span>
+                </li>
+                <li>
+                  <input type="checkbox" name="">
+                  <span>Pink</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="newsLetter">
+        <div class="newsLetterCenter">
+          <h1>NewsLetter</h1>
+          <input type="email" class="form-control" placeholder="Enter your mail">
+          <button class="btn-default">
+            SUBSCRIBE
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 itemSocials">
+            <ul>
+              <li>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </li>
+              <li>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </li>
+              <li>
+                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+              </li>
+              <li>
+                <i class="fa fa-vk" aria-hidden="true"></i>
+              </li>
+              <li>
+                <i class="fa fa-git" aria-hidden="true"></i>
+              </li>
+            </ul><br/>
+            <p class="copyrights">
+              © 2017 TrendSetter ® All Right Reserved
+            </p>
+          </div>
+          <div class="col-lg-2 itemFooterOptions">
+            <h1>About</h1>
+            <ul>
+              <li>
+                <a href="#">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  International
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 itemFooterOptions">
+            <h1>Support</h1>
+            <ul>
+              <li>
+                <a href="#">
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Returns
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Warranty
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Help
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 itemFooterOptions">
+            <h1>Legal</h1>
+            <ul>
+              <li>
+                <a href="#">
+                  Privacy
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Terms
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Patents
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 itemFooterOptions">
+            <h1>Other</h1>
+            <ul>
+              <li>
+                <a href="#">
+                  Account
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  NewsLetter
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- custom javaScript and jQuery libraries and plugins -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.mixitup.js"></script>
+    <script src="js/morphext.js"></script>
+    <script src="js/backstretch.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

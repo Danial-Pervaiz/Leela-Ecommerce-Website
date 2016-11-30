@@ -12,8 +12,28 @@ var dropDown = function(target, trigger){
 dropDown('.select','.options');
 dropDown('.currency','.currencyOption');
 
-// $('.smallNavigation span').on('click', function(){
-// 	if($(this).html() === 'FRENCH'){
-// 		alert('FRENCH');
-// 	}
-// });
+
+// inner OrderLists on products page
+
+$('.innerOrderLists li').on('click', function(){
+	$(this).addClass('active').siblings().removeClass('active');
+});
+$('#unOrderedLists .itemsListsCategory').on('click', function(){
+	$(this).siblings().children('ol').slideUp();
+	$(this).children('.innerOrderLists').slideDown();
+});
+
+// price filter slider 
+
+
+ $( "#slider-range" ).slider({
+  range: true,
+  min: 0,
+  max: 500,
+  values: [ 75, 300 ],
+  slide: function( event, ui ) {
+    $( "#amount" ).text( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+  }
+});
+$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+  " - $" + $( "#slider-range" ).slider( "values", 1 ) );
