@@ -2232,8 +2232,10 @@ html .ui-button.ui-state-disabled:active {
 }
 /* aboutTheItem  section */
 .aboutTheItem {
-  height: 700px;
+  height: 1500px;
   width: 100%;
+  /* descriptionProduct */
+  /* itemTailorDescription */
 }
 .aboutTheItem .navigationItem {
   height: 80px;
@@ -2274,6 +2276,75 @@ html .ui-button.ui-state-disabled:active {
 }
 .aboutTheItem .navigationItem ul li a:visited {
   text-decoration: none;
+}
+.aboutTheItem .descriptionProduct {
+  height: 300px;
+  width: 700px;
+  margin: 0 auto;
+  display: table;
+  margin-top: 100px;
+}
+.aboutTheItem .descriptionProduct h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1c1f23;
+  text-align: center;
+}
+.aboutTheItem .descriptionProduct h2 {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #b67c5a;
+  text-align: center;
+  padding-top: 18px;
+}
+.aboutTheItem .descriptionProduct p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.875;
+  padding-top: 30px;
+  color: #868383;
+}
+.aboutTheItem .itemTailorDescription {
+  height: 800px;
+  width: 800px;
+  margin: 0 auto;
+  display: table;
+  float: none;
+  margin-bottom: 100px;
+}
+.aboutTheItem .itemTailorDescription .tailorImage:nth-child(3) {
+  background-image: url('../assets/allProducts/tailor2.jpg');
+}
+.aboutTheItem .itemTailorDescription .tailorImage:nth-child(4) {
+  background-image: url('../assets/allProducts/tailor2.jpg');
+}
+.aboutTheItem .itemTailorDescription .tailorImage {
+  height: 399px;
+  width: 385px;
+  float: left;
+  background-image: url('../assets/allProducts/tailor.jpg');
+}
+.aboutTheItem .itemTailorDescription .tailorImage .overlayTailorImage {
+  height: 375px;
+  width: 363px;
+  background-color: #fff;
+  margin: 12px auto;
+  padding: 40px;
+}
+.aboutTheItem .itemTailorDescription .tailorImage .overlayTailorImage h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1c1f23;
+  text-align: center;
+  padding-top: 30px;
+}
+.aboutTheItem .itemTailorDescription .tailorImage .overlayTailorImage p {
+  color: #7b7d7f;
+  text-align: center;
+  line-height: 1.71;
+  padding-top: 15px;
 }
 /*============================================================
             
@@ -3139,6 +3210,139 @@ html .ui-button.ui-state-disabled:active {
     float: none;
     margin: 20px auto;
   }
+  /* single product section */
+  .singleProduct .itemSingleProduct {
+    height: auto;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .singleProduct .itemSingleProduct .imageSingle {
+    height: auto;
+    width: 100%;
+    margin-bottom: 13px;
+  }
+  .singleProduct .smallImage {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    right: 0px;
+    margin: 0 auto;
+    display: table;
+    float: none;
+  }
+  .singleProduct .smallImage li .singleImageSmall {
+    margin-left: 0px!important;
+    margin-bottom: 20px;
+  }
+  .singleProduct .itemSingleProductInfo .sale span {
+    float: right;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1;
+    color: white;
+    text-transform: uppercase;
+    background-color: #b67c5a;
+    padding: 4px;
+    margin-right: 86px;
+    margin-top: 6px;
+    margin: 0 auto;
+    display: table;
+    float: none;
+  }
+  .singleProduct .itemSingleProductInfo .sale .info {
+    height: 203px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-left: 0px;
+  }
+  .singleProduct .itemSingleProductInfo .sale .info .oldPrice {
+    font-size: 18px;
+    font-weight: 500;
+    float: left;
+    color: #ddd;
+    background-color: transparent;
+    padding: 0px;
+    padding-top: 11px;
+    position: relative;
+    right: 53px;
+    bottom: 1px;
+    padding-left: 69px;
+  }
+  .singleProduct .itemSingleProductInfo .sale .color {
+    height: 225px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-left: 0px;
+  }
+  .singleProduct .itemSingleProductInfo .sale .socialMedia {
+    height: 30px;
+    width: 100%;
+    margin: 0px;
+  }
+  .aboutTheItem .navigationItem ul li {
+    float: none;
+    height: 100px;
+    text-align: center;
+  }
+  .aboutTheItem .navigationItem {
+    height: auto;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 100px;
+  }
+  .aboutTheItem .navigationItem ul {
+    list-style: none;
+    display: table;
+    float: none;
+    margin: 27px auto;
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .aboutTheItem .descriptionProduct {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+    margin-top: 100px;
+    padding: 20px;
+  }
+  .aboutTheItem .itemTailorDescription {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+    float: none;
+    margin-bottom: 100px;
+  }
+  .aboutTheItem .itemTailorDescription .tailorImage {
+    height: 399px;
+    width: 100%;
+    background-image: url(../assets/allProducts/tailor.jpg);
+    float: none;
+    display: table;
+    margin: 0 auto;
+  }
+  .aboutTheItem {
+    height: auto;
+    width: 100%;
+  }
+  .aboutTheItem .itemTailorDescription .tailorImage {
+    height: 399px;
+    width: 100%;
+    background-image: url(../assets/allProducts/tailor.jpg);
+    float: none;
+    display: table;
+    margin: 0 auto;
+  }
+  .aboutTheItem .itemTailorDescription .tailorImage .overlayTailorImage {
+    height: 375px;
+    width: 100%;
+    background-color: #fff;
+    margin: 12px auto;
+    padding: 40px;
+  }
 }
 /* for mobile screens */
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -3584,6 +3788,139 @@ html .ui-button.ui-state-disabled:active {
     display: table;
     float: none;
     margin: 20px auto;
+  }
+  /* single product section */
+  .singleProduct .itemSingleProduct {
+    height: auto;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .singleProduct .itemSingleProduct .imageSingle {
+    height: auto;
+    width: 100%;
+    margin-bottom: 13px;
+  }
+  .singleProduct .smallImage {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    right: 0px;
+    margin: 0 auto;
+    display: table;
+    float: none;
+  }
+  .singleProduct .smallImage li .singleImageSmall {
+    margin-left: 0px!important;
+    margin-bottom: 20px;
+  }
+  .singleProduct .itemSingleProductInfo .sale span {
+    float: right;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1;
+    color: white;
+    text-transform: uppercase;
+    background-color: #b67c5a;
+    padding: 4px;
+    margin-right: 86px;
+    margin-top: 6px;
+    margin: 0 auto;
+    display: table;
+    float: none;
+  }
+  .singleProduct .itemSingleProductInfo .sale .info {
+    height: 203px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-left: 0px;
+  }
+  .singleProduct .itemSingleProductInfo .sale .info .oldPrice {
+    font-size: 18px;
+    font-weight: 500;
+    float: left;
+    color: #ddd;
+    background-color: transparent;
+    padding: 0px;
+    padding-top: 11px;
+    position: relative;
+    right: 53px;
+    bottom: 1px;
+    padding-left: 69px;
+  }
+  .singleProduct .itemSingleProductInfo .sale .color {
+    height: 225px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-left: 0px;
+  }
+  .singleProduct .itemSingleProductInfo .sale .socialMedia {
+    height: 30px;
+    width: 100%;
+    margin: 0px;
+  }
+  .aboutTheItem .navigationItem ul li {
+    float: none;
+    height: 100px;
+    text-align: center;
+  }
+  .aboutTheItem .navigationItem {
+    height: auto;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 100px;
+  }
+  .aboutTheItem .navigationItem ul {
+    list-style: none;
+    display: table;
+    float: none;
+    margin: 27px auto;
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .aboutTheItem .descriptionProduct {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+    margin-top: 100px;
+    padding: 20px;
+  }
+  .aboutTheItem .itemTailorDescription {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+    float: none;
+    margin-bottom: 100px;
+  }
+  .aboutTheItem .itemTailorDescription .tailorImage {
+    height: 399px;
+    width: 100%;
+    background-image: url(../assets/allProducts/tailor.jpg);
+    float: none;
+    display: table;
+    margin: 0 auto;
+  }
+  .aboutTheItem {
+    height: auto;
+    width: 100%;
+  }
+  .aboutTheItem .itemTailorDescription .tailorImage {
+    height: 399px;
+    width: 100%;
+    background-image: url(../assets/allProducts/tailor.jpg);
+    float: none;
+    display: table;
+    margin: 0 auto;
+  }
+  .aboutTheItem .itemTailorDescription .tailorImage .overlayTailorImage {
+    height: 375px;
+    width: 100%;
+    background-color: #fff;
+    margin: 12px auto;
+    padding: 40px;
   }
 }
 /* for extra small screen */
@@ -4061,5 +4398,138 @@ html .ui-button.ui-state-disabled:active {
     display: table;
     float: none;
     margin: 20px auto;
+  }
+  /* single product section */
+  .singleProduct .itemSingleProduct {
+    height: auto;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .singleProduct .itemSingleProduct .imageSingle {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 13px;
+  }
+  .singleProduct .smallImage {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    right: 0px;
+    margin: 0 auto;
+    display: table;
+    float: none;
+  }
+  .singleProduct .smallImage li .singleImageSmall {
+    margin-left: 0px!important;
+    margin-bottom: 20px;
+  }
+  .singleProduct .itemSingleProductInfo .sale span {
+    float: right;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1;
+    color: white;
+    text-transform: uppercase;
+    background-color: #b67c5a;
+    padding: 4px;
+    margin-right: 86px;
+    margin-top: 6px;
+    margin: 0 auto;
+    display: table;
+    float: none;
+  }
+  .singleProduct .itemSingleProductInfo .sale .info {
+    height: 203px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-left: 0px;
+  }
+  .singleProduct .itemSingleProductInfo .sale .info .oldPrice {
+    font-size: 18px;
+    font-weight: 500;
+    float: left;
+    color: #ddd;
+    background-color: transparent;
+    padding: 0px;
+    padding-top: 11px;
+    position: relative;
+    right: 53px;
+    bottom: 1px;
+    padding-left: 69px;
+  }
+  .singleProduct .itemSingleProductInfo .sale .color {
+    height: 225px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-left: 0px;
+  }
+  .singleProduct .itemSingleProductInfo .sale .socialMedia {
+    height: 30px;
+    width: 100%;
+    margin: 0px;
+  }
+  .aboutTheItem .navigationItem ul li {
+    float: none;
+    height: 100px;
+    text-align: center;
+  }
+  .aboutTheItem .navigationItem {
+    height: auto;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 100px;
+  }
+  .aboutTheItem .navigationItem ul {
+    list-style: none;
+    display: table;
+    float: none;
+    margin: 27px auto;
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .aboutTheItem .descriptionProduct {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+    margin-top: 100px;
+    padding: 20px;
+  }
+  .aboutTheItem .itemTailorDescription {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+    float: none;
+    margin-bottom: 100px;
+  }
+  .aboutTheItem .itemTailorDescription .tailorImage {
+    height: 399px;
+    width: 100%;
+    background-image: url(../assets/allProducts/tailor.jpg);
+    float: none;
+    display: table;
+    margin: 0 auto;
+  }
+  .aboutTheItem {
+    height: auto;
+    width: 100%;
+  }
+  .aboutTheItem .itemTailorDescription .tailorImage {
+    height: 399px;
+    width: 100%;
+    background-image: url(../assets/allProducts/tailor.jpg);
+    float: none;
+    display: table;
+    margin: 0 auto;
+  }
+  .aboutTheItem .itemTailorDescription .tailorImage .overlayTailorImage {
+    height: 375px;
+    width: 100%;
+    background-color: #fff;
+    margin: 12px auto;
+    padding: 40px;
   }
 }
